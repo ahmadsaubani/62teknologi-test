@@ -122,7 +122,10 @@ class BusinessController extends Controller
             ], 200);
         } catch (Exception $e) {
             DB::rollBack();
-            return $e->getMessage();
+            return response()->json([
+                'status'    => 'sukses',
+                'message'   => $e->getMessage()
+            ], 500);
         }
     }
 }
