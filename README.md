@@ -4,6 +4,10 @@
 - run in terminal `` cp .env.example .env``
 - run in terminal `` php artisan migrate ``
 
+``` Test running ```
+- ``php artisan serve``
+- ``localhost:8000/api/getBussines``
+
 ``` Structure Database ```
 - ``business`` for storing data from ``https://api.yelp.com/v3/businesses/search?location=newyork&term=pasta`` .
 - ``location`` for detail business location and related to ``business`` table .
